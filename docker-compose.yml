@@ -1,0 +1,83 @@
+// docker-compose.yml
+version: '3.8'
+
+services:
+  payment-gateway:
+    build:
+      context: ./payment-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=sqlite:///./payment_gateway.db
+    volumes:
+      - ./payment-gateway:/app
+    networks:
+      - ecommerce-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  ml-fraud-detection:
+    build:
+      context: ./ml-fraud-detection
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002"
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - ./ml-fraud-detection:/app
+    networks:
+      - ecommerce-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  inventory-api:
+    build:
+      context: ./inventory-api
+      dockerfile: Dockerfile
+    ports:
+      - "5003:5003"
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - ./inventory-api:/app
+    networks:
+      - ecommerce-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  analytics-processor:
+    build:
+      context: ./analytics-processor
+      dockerfile: Dockerfile
+    ports:
+      - "5004:5004"
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - ./analytics-processor:/app
+    networks:
+      - ecommerce-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5004/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  ecommerce-network:
+    driver: bridge
+
+// .python-version
+3.10.13
