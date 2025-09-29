@@ -69,25 +69,29 @@ python --version  # Should show Python 3.10.13
 # Clone/navigate to project directory
 cd ecommerce-services
 
-# Set local Python version for the project
+# Make install script executable
+chmod +x install_dependencies.sh
+
+# Run automated installation
+./install_dependencies.sh
+```
+
+**What the script does:**
+- Checks if pyenv is installed
+- Installs Python 3.10.13 if needed
+- Sets local Python version to 3.10.13
+- Installs dependencies for all four services
+
+**Manual installation (if you prefer):**
+```bash
+# Set local Python version
 pyenv local 3.10.13
 
-# Install dependencies for each service
-cd payment-gateway
-pip install -r requirements.txt
-cd ..
-
-cd ml-fraud-detection
-pip install -r requirements.txt
-cd ..
-
-cd inventory-api
-pip install -r requirements.txt
-cd ..
-
-cd analytics-processor
-pip install -r requirements.txt
-cd ..
+# Install each service manually
+cd payment-gateway && pip install -r requirements.txt && cd ..
+cd ml-fraud-detection && pip install -r requirements.txt && cd ..
+cd inventory-api && pip install -r requirements.txt && cd ..
+cd analytics-processor && pip install -r requirements.txt && cd ..
 ```
 
 ### 3. Run All Tests
