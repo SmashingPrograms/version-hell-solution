@@ -1,4 +1,3 @@
-// inventory-api/inventory_manager.py
 """
 Core inventory management logic with caching
 """

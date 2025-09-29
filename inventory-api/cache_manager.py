@@ -1,4 +1,3 @@
-// inventory-api/cache_manager.py
 """
 Cache management using in-memory storage
 (In production, this would use Redis)

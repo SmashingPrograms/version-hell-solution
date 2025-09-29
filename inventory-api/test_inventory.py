@@ -1,4 +1,3 @@
-// inventory-api/test_inventory.py
 """
 Test suite for inventory API service
 """

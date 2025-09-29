@@ -1,4 +1,4 @@
-// install_dependencies.sh
+# install_dependencies.sh
 #!/bin/bash
 
 set -e  # Exit on any error

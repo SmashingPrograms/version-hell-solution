@@ -1,4 +1,3 @@
-// payment-gateway/database.py
 """
 Database configuration and session management
 """

@@ -1,4 +1,3 @@
-// payment-gateway/models.py
 """
 Database models for payment transactions
 """

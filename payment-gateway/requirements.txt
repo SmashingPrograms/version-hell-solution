@@ -1,4 +1,4 @@
-// payment-gateway/requirements.txt
+# payment-gateway/requirements.txt
 Flask==2.3.0
 SQLAlchemy==2.0.15
 pytest==7.3.1

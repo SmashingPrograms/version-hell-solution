@@ -1,4 +1,3 @@
-// inventory-api/app.py
 """
 Inventory API Service
 Manages product inventory with async database operations

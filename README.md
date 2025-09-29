@@ -1,4 +1,3 @@
-// README.md
 # E-Commerce Order Processing Platform - Master Version
 
 **Status:** ✅ Working Baseline (All services compatible with Python 3.10)

@@ -1,4 +1,3 @@
-// analytics-processor/report_generator.py
 """
 Report generation in various formats
 """

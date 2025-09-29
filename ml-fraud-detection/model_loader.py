@@ -1,4 +1,3 @@
-// ml-fraud-detection/model_loader.py
 """
 ML model loading and management
 """

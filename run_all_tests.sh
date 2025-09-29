@@ -1,4 +1,4 @@
-// run_all_tests.sh
+# run_all_tests.sh
 #!/bin/bash
 
 # Run all service tests and generate summary report

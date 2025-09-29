@@ -1,4 +1,3 @@
-// ml-fraud-detection/test_fraud.py
 """
 Test suite for fraud detection service
 """

@@ -1,4 +1,3 @@
-// payment-gateway/payment_processor.py
 """
 Payment processing logic with realistic validation and transaction handling
 """

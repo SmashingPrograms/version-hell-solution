@@ -1,4 +1,3 @@
-// payment-gateway/app.py
 """
 Payment Gateway Service
 Handles payment processing with Stripe-like integration patterns

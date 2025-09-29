@@ -1,4 +1,3 @@
-// ml-fraud-detection/app.py
 """
 ML Fraud Detection Service
 Analyzes transactions for fraud using machine learning patterns

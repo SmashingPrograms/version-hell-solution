@@ -1,4 +1,3 @@
-// payment-gateway/auth_middleware.py
 """
 Authentication middleware for API key validation
 """

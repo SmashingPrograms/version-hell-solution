@@ -1,4 +1,3 @@
-// analytics-processor/test_analytics.py
 """
 Test suite for analytics processor service
 """

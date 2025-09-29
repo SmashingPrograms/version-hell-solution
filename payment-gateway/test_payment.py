@@ -1,4 +1,3 @@
-// payment-gateway/test_payment.py
 """
 Test suite for payment gateway service
 """

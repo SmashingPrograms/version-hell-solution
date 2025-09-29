@@ -1,4 +1,3 @@
-// analytics-processor/app.py
 """
 Analytics Processor Service
 Processes sales data and generates analytics reports
